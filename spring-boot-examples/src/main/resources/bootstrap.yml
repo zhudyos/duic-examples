@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: sample
+
+duic:
+  spring:
+    cloud:
+      config:
+        watch:
+          ### 启用配置监控，启用该选项才会监控配置变化，重载配置
+          enabled: true
+          ### 初始监控配置延迟时间（毫秒）
+          initial_delay: 10000
+          ### 固定扫描配置变化周期（毫秒）
+          fixed_delay: 10000
+        ### 获取配置 base_uri
+        uri: https://duic.zhudy.io/api/v1
+        ### 如果不配置应用名称，默认使用 ${spring.application.name}
+        # name: sample
+        # 配置名称，多个采用英文逗号(,)分隔
+        profile: first

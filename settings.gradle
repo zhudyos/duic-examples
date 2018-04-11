@@ -1,0 +1,4 @@
+rootProject.name = 'duic-examples'
+
+include "spring-boot-examples"
+include "spring-examples"
